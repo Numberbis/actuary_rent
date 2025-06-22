@@ -143,7 +143,6 @@ export function calculateAnnuity(params: CalculationParams): CalculationResult {
     
     if (annuityType === 'growing') {
       payment = annualAmount * Math.pow(1 + growthRate! / 100, year - 1);
-      )
     }
     
     if (annuityType === 'temporary' && year > duration) {
